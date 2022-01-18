@@ -11,5 +11,6 @@ jobs:
         uses: hashicorp/setup-terraform@v1
         with:
             terraform-version: "1"
+      - run: terraform --version
       - run: terraform init
       - run: terraform validate
